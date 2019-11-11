@@ -42,6 +42,8 @@ let greeting = (first_name, last_name) => {
 
 // Explain in your own words why nestedfunction can access the variable internal.
 
+// Because the variable internal in nestedFunction's scope is enclosed in a private scope of myFunction.
+
 // Explanation: 
 
 

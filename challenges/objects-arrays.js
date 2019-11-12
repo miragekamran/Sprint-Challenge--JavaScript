@@ -157,27 +157,19 @@ this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
 
 */
 
-const displayNames = [{Name: "Jackal, asiatic", Scientific: "Canis aureus"},
-                      {Name: "Screamer, southern", Scientific: "Chauna torquata"},
-                      {Name: "White spoonbill", Scientific: "Platalea leucordia"},
-                      {Name: "White-cheeked pintail", Scientific: "Anas bahamensis"},
-                      {Name: "Black-backed jackal", Scientific: "Canis mesomelas"},
-                      {Name: "Brolga crane", Scientific: "Grus rubicundus"},
-                      {Name: "Common melba finch", Scientific: "Pytilia melba"},
-                      {Name: "Pampa gray fox", Scientific: "Pseudalopex gymnocercus"},
-                      {Name: "Hawk-eagle, crowned", Scientific: "Spizaetus coronatus"},
-                      {Name: "Australian pelican", Scientific: "Pelecanus conspicillatus"}];
+const displayNames = [];
 
-displayNames.forEach(function(Name, Scientific) {
-  
-  console.log(displayNames);
-})
+zooAnimals.forEach(element => {
+	displayNames.push(`Name: ${element.animal_name}, Scientific: ${element.scientific_name}`)
+});
 
-
+console.log(displayNames);
 
 /* Request 2: .map()
 
-The zoos need a list of all their animal's names (animal_name only) converted to lower case. Using map, create a new array of strings named lowCaseAnimalNames, each string following this pattern: "jackal, asiatic". Log the resut.
+The zoos need a list of all their animal's names (animal_name only) converted to lower case. 
+Using map, create a new array of strings named lowCaseAnimalNames, each string following 
+this pattern: "jackal, asiatic". Log the resut.
 
 */
 
